@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Reference</title>
+    <!--CSS sources files links-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <style>
+    /* width */
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 12px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #59bb57; 
+    border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #2d5c2c; 
+    }
+    </style>
+
+</head>
+<body>
+    <!--Header section-->
+    <header id="header">
+        <div id="logoBox">
+            <img src="#" alt="Logo" id="logo">
+        </div>
+        <div id="nav-title">
+            <h1>Web Reference</h1>
+        </div>
+    </header>
+    <!--End header section-->
+    <!--Navigation-->
+    <nav id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div> 
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+    </nav>
+    <!--End Navigation-->
+    <!--Main content-->
+    <main id="content">
+        <aside id="left">
+            <h3>My left box</h3>
+        </aside>
+        <section id="content-center">
+            <h2>My content</h2>
+            <article class="art art-1">
+                <img src="https://picsum.photos/450/300" alt="art-img" id="art-img" >
+                <h5 class="art-title">Title 5</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quibusdam voluptatibus sit eius facilis. Minima repellat ratione, alias voluptatibus consectetur dolore. Esse reiciendis quos aut quam natus dolorem minima est?
+                </p>
+            </article>
+            <article class="art art-2">
+                <img src="https://picsum.photos/450/300" alt="art-img" id="art-img" >
+                <h5 class="art-title">Title 5</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quibusdam voluptatibus sit eius facilis. Minima repellat ratione, alias voluptatibus consectetur dolore. Esse reiciendis quos aut quam natus dolorem minima est?
+                </p>
+            </article>
+            <article class="art art-3">
+                
+                <img src="https://picsum.photos/450/300" alt="art-img" id="art-img" >
+                <h5 class="art-title">Title 5</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quibusdam voluptatibus sit eius facilis. Minima repellat ratione, alias voluptatibus consectetur dolore. Esse reiciendis quos aut quam natus dolorem minima est?
+                </p>
+            </article>
+            <article class="art art-4">
+                <img src="https://picsum.photos/450/300" alt="art-img" id="art-img" >
+                <h5 class="art-title">Title 5</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quibusdam voluptatibus sit eius facilis. Minima repellat ratione, alias voluptatibus consectetur dolore. Esse reiciendis quos aut quam natus dolorem minima est?
+                </p>
+            </article>
+            <article class="art art-5">
+                <img src="https://picsum.photos/450/300" alt="art-img" id="art-img" >
+                <h5 class="art-title">Title 5</h5>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quibusdam voluptatibus sit eius facilis. Minima repellat ratione, alias voluptatibus consectetur dolore. Esse reiciendis quos aut quam natus dolorem minima est?
+                </p>
+            </article>
+        </section>
+        <aside id="right">
+            <h3>My right box</h3>
+        </aside>
+        </main>
+    <!--End Main Content-->
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <!--End Footer-->
+    <!--Javascript sources files-->
+    <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
